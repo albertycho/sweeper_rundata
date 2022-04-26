@@ -1,0 +1,34 @@
+[S 3] WARN: Sched: untested code path, check with Daniel if you see this
+[S 3] WARN: Sched: untested code path, check with Daniel if you see this
+[S 0] Failed assertion on build/opt/profile_stats.h:61 'endNs >= startNs' (with '1650388658098637007 >= 1650388658297958300')
+[S 0] [1] Internal exception detected:
+[S 0] [1]  Code: 1
+[S 0] [1]  Address: 0x7ffff6211d48
+[S 0] [1]  Description: Exception Code: ACCESS_INVALID_ADDRESS. Exception Address = 0x7ffff6211d48. Access Type: UNKNOWN. Access Address = 0x000000000
+[S 0] [1] Backtrace (11/40 max frames)
+[S 0] [1]  /nethome/acho44/zsim/zSim/build/opt/zsim.cpp:1423 / InternalExceptionHandler(unsigned int, LEVEL_BASE::EXCEPTION_INFO*, LEVEL_VM::PHYSICAL_CONTEXT*, void*)
+[S 0] [1]  :? / LEVEL_PINCLIENT::IEH_CALLBACKS::NotifyInternalException(unsigned int, LEVEL_BASE::EXCEPTION_INFO*, LEVEL_VM::CONTEXT*)
+[S 0] [1]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(_ZN8LEVEL_VM12SIGNALS_IMPL19InternalHandlerSyncEiPN7BARECRT8SIGXINFOEPN5PINVM11ISIGCONTEXTEPPKNS_14SCT_ATTRIBUTESEPNS_5PCTXTEPj+0x444) [0x3043a9454]
+[S 0] [1]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(_ZN8LEVEL_VM12SIGNALS_IMPL20HandlePhysicalSignalEPN7BARECRT8SIGXINFOEPN5PINVM11ISIGCONTEXTE+0x124) [0x3043aa1f4]
+[S 0] [1]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(_ZN5PINVM28SIGNAL_DETAILS_LINUX_INTEL6415InternalHandlerEiPN7BARECRT8SIGXINFOEPv+0xe8) [0x304438c88]
+[S 0] [1]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(BARECRT_SigReturnRt+0) [0x30446603c]
+[S 0] [1]  /nethome/acho44/zsim/zSim/build/opt/profile_stats.h:61 (discriminator 12) / ClockStat::end()
+[S 0] [1]  /nethome/acho44/zsim/zSim/build/opt/contention_sim.cpp:411 / ContentionSim::simulatePhaseThread(unsigned int)
+[S 0] [1]  /nethome/acho44/zsim/zSim/build/opt/contention_sim.cpp:283 / ContentionSim::simThreadLoop(unsigned int)
+[S 0] [1]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(_ZN8LEVEL_VM17VM_THREAD_DB_UNIX13THREAD_RUNNER9RunThreadEPN11OS_SERVICES7ITHREADE+0x289) [0x3043b3239]
+[S 0] [1]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(_ZN11OS_SERVICES6THREAD12RootFunctionEPv+0x26) [0x304465636]
+Pin app terminated abnormally due to signal 11.
+[H] WARN: Stalled for 11 secs so far
+[H] WARN: Stalled for 21 secs so far
+[H] WARN: Stalled for 31 secs so far
+[H] WARN: Stalled for 41 secs so far
+[H] WARN: Stalled for 51 secs so far
+[H] WARN: Stalled for 61 secs so far
+[H] WARN: Stalled for 71 secs so far
+[H] WARN: Stalled for 81 secs so far
+[H] WARN: Stalled for 91 secs so far
+[H] WARN: Stalled for 101 secs so far
+[H] WARN: Stalled for 111 secs so far
+[H] WARN: Stalled for 121 secs so far
+[H] WARN: Deadlock detected, killing children
+[H] WARN: Hard death at exit (1 children running), killing the whole process tree

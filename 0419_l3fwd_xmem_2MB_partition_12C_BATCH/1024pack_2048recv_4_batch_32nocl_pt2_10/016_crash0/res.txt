@@ -1,0 +1,105 @@
+[H] Starting zsim, built Mon Apr 18 18:03:55 EDT 2022 (rev albert_dev_211012:275:07f8781:47fc 320+ 51424- 5730b1f0)
+[H] Creating global segment, 65536 MBs
+[H] Global segment shmid = 33357827
+[H] Deadlock detection ON
+[S 3] Started instance
+[S 1] Started instance
+[S 0] Started instance
+[S 0] matrix A,B,C allocated
+[S 0] contention sim init, tid = 0, firstD = 0, supD = 1
+[S 0] Started RR scheduler, quantum=50 phases
+[S 2] Started instance
+[S 0] loadGenName: lg1
+[S 0] mem-0: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-0: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-1: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-1: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-2: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-2: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-3: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-3: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] num server cores: 12
+
+[S 0] nicInfo->num_ddio_ways: 2
+[S 0] init: gmSize: 65536 gm_size: 0
+[S 0] Initialized system
+[S 0] HDF5 backend: Opening /shared/acho44/0419_l3fwd_xmem_2MB_partition_12C_BATCH/1024pack_2048recv_4_batch_32nocl_pt2_10/016/zsim.h5
+[S 0] HDF5 backend: Created table, 101648 bytes/record, 11 records/write
+[S 0] HDF5 backend: Opening /shared/acho44/0419_l3fwd_xmem_2MB_partition_12C_BATCH/1024pack_2048recv_4_batch_32nocl_pt2_10/016/zsim-ev.h5
+[S 0] HDF5 backend: Created table, 101648 bytes/record, 2 records/write
+[S 0] HDF5 backend: Opening /shared/acho44/0419_l3fwd_xmem_2MB_partition_12C_BATCH/1024pack_2048recv_4_batch_32nocl_pt2_10/016/zsim-cmp.h5
+[S 0] HDF5 backend: Created table, 10432 bytes/record, 1 records/write
+[S 0] Initialization complete
+[S 0] Started process, PID 116522
+[S 0] procMask: 0x0
+[S 0] [0] Adjusting clocks, domain 0, de-ffwd 0
+[S 2] Started process, PID 116525
+[S 2] procMask: 0x800000000000000
+[H] Attached to global heap
+[S 1] Started process, PID 116523
+[S 1] procMask: 0x400000000000000
+[S 0] vDSO info initialized
+[S 3] Started process, PID 116524
+[S 3] procMask: 0xc00000000000000
+[S 2] vDSO info initialized
+[S 1] vDSO info initialized
+[S 3] vDSO info initialized
+[S 2] Thread 0 starting
+[S 0] Thread 0 starting
+[S 2] FF control Thread TID 116529
+[S 0] FF control Thread TID 116530
+[S 0] Started contention simulation thread 0
+[S 0] Started scheduler watchdog thread
+[S 1] Thread 0 starting
+[S 1] FF control Thread TID 116531
+[S 3] Thread 0 starting
+[S 3] FF control Thread TID 116532
+C: Tool (or Pin) caused signal 11 at PC 0x7ffff62d1e19
+[H] Child 116520 done
+0 116517
+1 116518
+2 116519
+0 116517
+1 116518
+2 116519
+0 116517
+1 116518
+2 116519
+0 116517
+1 116518
+2 116519
+0 116517
+1 116518
+2 116519
+0 116517
+1 116518
+2 116519
+0 116517
+1 116518
+2 116519
+0 116517
+1 116518
+2 116519
+0 116517
+1 116518
+2 116519
+0 116517
+1 116518
+2 116519
+0 116517
+1 116518
+2 116519
+0 116517
+1 116518
+2 116519
+0 116517
+1 116518
+2 116519
+[H] Received interrupt
+[H] Attempting graceful termination
+[H] Killing process 116517
+[H] Killing process 116518
+[H] Child 116517 done
+[H] Killing process 116519
+[H] Child 116518 done
+[H] Done sending kill signals

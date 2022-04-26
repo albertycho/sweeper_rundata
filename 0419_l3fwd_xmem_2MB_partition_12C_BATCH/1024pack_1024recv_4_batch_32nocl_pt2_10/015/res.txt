@@ -1,0 +1,457 @@
+[H] Starting zsim, built Mon Apr 18 18:03:55 EDT 2022 (rev albert_dev_211012:275:07f8781:47fc 320+ 51424- 5730b1f0)
+[H] Creating global segment, 65536 MBs
+[H] Global segment shmid = 33914884
+[H] Deadlock detection ON
+[S 1] Started instance
+[S 3] Started instance
+[S 2] Started instance
+[S 0] Started instance
+[S 0] matrix A,B,C allocated
+[S 0] contention sim init, tid = 0, firstD = 0, supD = 1
+[S 0] Started RR scheduler, quantum=50 phases
+[S 0] loadGenName: lg1
+[S 0] mem-0: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-0: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-1: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-1: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-2: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-2: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-3: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-3: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] num server cores: 12
+
+[S 0] nicInfo->num_ddio_ways: 2
+[S 0] init: gmSize: 65536 gm_size: 0
+[S 0] Initialized system
+[S 0] HDF5 backend: Opening /shared/acho44/0419_l3fwd_xmem_2MB_partition_12C_BATCH/1024pack_1024recv_4_batch_32nocl_pt2_10/015/zsim.h5
+[S 0] HDF5 backend: Created table, 101648 bytes/record, 11 records/write
+[S 0] HDF5 backend: Opening /shared/acho44/0419_l3fwd_xmem_2MB_partition_12C_BATCH/1024pack_1024recv_4_batch_32nocl_pt2_10/015/zsim-ev.h5
+[S 0] HDF5 backend: Created table, 101648 bytes/record, 2 records/write
+[S 0] HDF5 backend: Opening /shared/acho44/0419_l3fwd_xmem_2MB_partition_12C_BATCH/1024pack_1024recv_4_batch_32nocl_pt2_10/015/zsim-cmp.h5
+[S 0] HDF5 backend: Created table, 10432 bytes/record, 1 records/write
+[S 0] Initialization complete
+[S 0] Started process, PID 119310
+[S 0] procMask: 0x0
+[S 0] [0] Adjusting clocks, domain 0, de-ffwd 0
+[S 3] Started process, PID 119309
+[S 3] procMask: 0xc00000000000000
+[S 2] Started process, PID 119307
+[S 2] procMask: 0x800000000000000
+[S 0] vDSO info initialized
+[H] Attached to global heap
+[S 3] vDSO info initialized
+[S 1] Started process, PID 119308
+[S 1] procMask: 0x400000000000000
+[S 2] vDSO info initialized
+[S 1] vDSO info initialized
+[S 2] Thread 0 starting
+[S 2] FF control Thread TID 119315
+[S 1] Thread 0 starting
+[S 1] FF control Thread TID 119316
+[S 3] Thread 0 starting
+[S 3] FF control Thread TID 119314
+[S 0] Thread 0 starting
+[S 0] FF control Thread TID 119313
+[S 0] Started scheduler watchdog thread
+[S 0] Started contention simulation thread 0
+[S 1] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe9b0
+[S 0] Time slice ended, context-switched 1 threads, runQueue size 0, available 26
+[S 0]  State:  ___ 131072r 196608r  0r ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+[S 2] newCid!=cid
+zsim p1: xchg rbx rbx caught!
+[S 1] nic egress  pid:1, cid:1
+[S 0] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe9c0
+zsim p0: xchg rbx rbx caught!
+[S 0] nic ingress pid:0, cid:0
+[S 3] [0] Post-patching SYS_sched_getaffinity size 512 cpuset 0x673cc0
+[S 3] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe580
+zsim p3: xchg rbx rbx caught!
+[S 3] ROI_END, entering fast-forward
+[S 3] registered_non_net_core_count: 1, expected_non_net_core_count: 12
+
+[S 3] Thread 0 entering fast-forward
+[S 3] newCid!=cid
+Bound xmem main thread to core
+
+[S 2] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe890
+Working set per thread:               2097152 B == 2048 KB == 2 MB (512 pages)
+Config done
+[S 2] Thread 2 starting
+[S 2] Thread 3 starting
+[S 2] Thread 4 starting
+[S 2] Thread 5 starting
+[S 2] Thread 6 starting
+[S 2] [2] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffe1a25e50
+[S 2] [4] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdf811e50
+[S 2] Thread 7 starting
+[S 2] [6] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdd5fde50
+
+-------- Running Benchmark: Test #1T (Throughput) ----------
+CPU NUMA Node: 0
+Memory NUMA Node: 0
+Chunk Size: 64-bit
+Access Pattern: random
+Read/Write Mode: read
+Number of worker threads: 12
+
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [2/2] futex (202) @ 0x7fffe29fa19a
+[S 0] Blacklisting from future fake leaves: [2] futex @ 0x7fffe29fa19a | arg0 0x7fffe2cab780 arg1 0x80
+[S 2] [3] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffe091be50
+[S 2] [7] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdc4f3e50
+[S 2] [5] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffde707e50
+[S 2] Thread 8 starting
+[S 2] [8] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdb3c1e50
+[S 2] Thread 9 starting
+[S 2] [9] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffda2b7e50
+[S 2] Thread 10 starting
+[S 2] [10] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd91ade50
+[S 2] Thread 11 starting
+[S 2] [11] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd17f9e50
+[S 2] Thread 12 starting
+[S 2] [12] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffcb7fde50
+[S 2] Thread 13 starting
+[S 2] [13] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffc9ff8e50
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [2/0] futex (202) @ 0x7fffe30c698b
+[S 0] Blacklisting from future fake leaves: [2] futex @ 0x7fffe30c698b | arg0 0x7fffe1a269d0 arg1 0x0
+[S 3] ROI_BEGIN, exiting fast-forward
+[S 3] [3] Adjusting clocks, domain 0, de-ffwd 1
+[S 3] Thread 0 starting
+[S 3] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe420
+[S 3] Thread 2 starting
+[S 3] Thread 3 starting
+[S 3] Thread 4 starting
+[S 3] Thread 5 starting
+[S 3] Thread 6 starting
+[S 3] Thread 7 starting
+[S 3] Thread 8 starting
+[S 3] Thread 9 starting
+[S 3] Thread 10 starting
+[S 3] Thread 11 starting
+[S 3] Thread 12 starting
+[S 3] Thread 13 starting
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [3/7] futex (202) @ 0x7fffe21de19a
+[S 0] Blacklisting from future fake leaves: [3] futex @ 0x7fffe21de19a | arg0 0x7fffe248f7e0 arg1 0x80
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [3/0] futex (202) @ 0x7fffe2ebd98b
+[S 0] Blacklisting from future fake leaves: [3] futex @ 0x7fffe2ebd98b | arg0 0x7fffe03679d0 arg1 0x0
+Xmem launching worker threads
+Bound xmem main thread to core
+locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu 182221202423261516171925
+
+
+
+
+
+
+
+
+
+
+[S 3] [7] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdae2cdb0
+[S 3] [11] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd6a04db0
+[S 3] [2] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffe0366db0
+[S 3] [8] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd9d22db0
+[S 3] [6] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdbf36db0
+[S 3] [13] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd47f0db0
+[S 3] [10] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd7b0edb0
+[S 3] [9] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd8c18db0
+
+X-Mem pinned to cpu 21
+[S 3] [4] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffde14adb0
+[S 3] [5] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdd040db0
+[S 3] [12] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd58fadb0
+[S 3] [3] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdf254db0
+X-Mem pinned to cpu 18
+X-Mem pinned to cpu 19
+X-Mem pinned to cpu 15
+X-Mem pinned to cpu 24
+X-Mem pinned to cpu 23
+X-Mem pinned to cpu 26
+X-Mem pinned to cpu 22
+X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu 25
+X-Mem pinned to cpu 17
+X-Mem pinned to cpu 16
+X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu 20
+X-Mem pinned to cpu X-Mem pinned to cpu 2522X-Mem pinned to cpu 2623
+19
+15
+1821
+
+
+24
+2016X-Mem pinned to cpu 
+
+17
+
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+zsim p3: xchg rbx rbx caught!
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+zsim p2: xchg rbx rbx caught!
+zsim p2: xchg rbx rbx caught!
+[S 2] core 5 registered LBUF at addrs 799582953728
+[S 2] core 4 registered LBUF at addrs 799582888064
+[S 2] core 3 registered LBUF at addrs 799583019328
+[S 2] core 6 registered LBUF at addrs 799583478272
+[S 2] core 8 registered LBUF at addrs 799583675072
+[S 2] core 6 registered WQ at addrs 799010257408
+[S 2] core 3 registered WQ at addrs 799010146176
+[S 2] core 6 registered CQ at addrs 799010244992
+[S 2] core 3 registered CQ at addrs 799010133760
+[S 2] core 5 registered WQ at addrs 799010220352
+[S 2] core 5 registered CQ at addrs 799010207936
+[S 2] core 4 registered WQ at addrs 799010183232
+[S 2] core 4 registered CQ at addrs 799010170816
+[S 2] core 7 registered LBUF at addrs 799584002944
+[S 2] core 8 registered WQ at addrs 799010331584
+[S 2] core 8 registered CQ at addrs 799010319168
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [2/7] futex (202) @ 0x7fffe30cc152
+[S 0] Blacklisting from future fake leaves: [2] futex @ 0x7fffe30cc152 | arg0 0x717e74 arg1 0x80
+[S 2] core 7 registered WQ at addrs 799010294528
+[S 2] core 7 registered CQ at addrs 799010282112
+[S 2] core 9 registered LBUF at addrs 799587477440
+[S 2] core 9 registered WQ at addrs 799010368704
+[S 2] core 9 registered CQ at addrs 799010356288
+[S 2] core 10 registered LBUF at addrs 799588985344
+[S 2] core 10 registered WQ at addrs 799010405760
+[S 2] core 10 registered CQ at addrs 799010393344
+[S 2] core 11 registered LBUF at addrs 799589051008
+[S 2] core 11 registered WQ at addrs 799010442880
+[S 2] core 11 registered CQ at addrs 799010430464
+[S 2] core 12 registered LBUF at addrs 799589116672
+[S 2] core 14 registered LBUF at addrs 799589182272
+[S 2] core 12 registered WQ at addrs 799010479936
+[S 2] core 12 registered CQ at addrs 799010467520
+[S 2] core 14 registered WQ at addrs 799010554112
+[S 2] core 14 registered CQ at addrs 799010541696
+[S 2] core 13 registered LBUF at addrs 799589247872
+[S 2] core 13 registered WQ at addrs 799010517056
+[S 2] nic init completed
+[S 2] core 13 registered CQ at addrs 799010504640
+[S 0] starting sim time count
+[S 0] first sampling cycle: 21433004
+[S 0] done with closed loop warmup!, sampling phase: 2541
+[S 0] Spillover count during warmup: 0
+[S 2] Heartbeat target 12 reached, marking stats dump
+[S 2] Resetting heartbeat count (for periodic dumps)
+[S 3] Dumping eventual stats for process GROUP 2 (heartbeats)
+[S 0] RB space iterated 1-th time: sampling phase 2561
+[S 0] RB space iterated 2-th time: sampling phase 3371
+[S 0] core 12 getting queue builtup, cycle 24934757
+[S 2] proc 2 deregistered with NIC
+cycle: 24943000
+[S 2] proc 2 deregistered with NIC
+cycle: 24944000
+[S 2] proc 2 deregistered with NIC
+cycle: 24945000
+[S 2] Thread 8 finished
+[S 2] proc 2 deregistered with NIC
+cycle: 24950000
+[S 2] cycle: 24950000
+[S 2] Thread 7 finished
+[S 2] Thread 5 finished
+[S 2] proc 2 deregistered with NIC
+cycle: 24952000
+[S 2] Thread 6 finished
+[S 2] Thread 11 finished
+[S 2] Thread 10 finished
+[S 2] proc 2 deregistered with NIC
+cycle: 24969000
+[S 2] Thread 9 finished
+[S 2] proc 2 deregistered with NIC
+cycle: 24971000
+[S 2] Thread 2 finished
+[S 2] proc 2 deregistered with NIC
+cycle: 24974000
+[S 2] proc 2 deregistered with NIC
+cycle: 24975000
+[S 2] Thread 3 finished
+[S 2] Heartbeat target 12 reached, marking stats dump
+[S 2] Resetting heartbeat count (for periodic dumps)
+[S 0] Dumping eventual stats for process GROUP 2 (heartbeats)
+[S 2] Thread 4 finished
+[S 2] proc 2 deregistered with NIC
+cycle: 24977000
+[S 2] proc 2 deregistered with NIC
+cycle: 24978000
+[S 2] Thread 13 finished
+[S 2] Thread 12 finished
+Bound herd main thread to core
+l3fwd batchsize set to 32
+l3fwd packetsize set to 1024
+l3fwd qps set to 12
+l3fwd num_threads set to 12
+l3fwd num_keys set to 16
+l3fwd log_cap set to 4194304
+GETOPT FAILED (1 FAIL expected)
+DEBUG /nethome/acho44/zsim/zSim/src/libzsim/zsim_nic_defines.cpp:302: Ctx 7 was allocated starting from address 0x0x718000. Number of pages: 2
+Ctx buffer was registered, ctx_size=16384, 2 pages.
+Pointer to pgas: 0x718000
+Beginning map of send/recv paired memory locations...
+Succeeded mapping send/recv slots for rpcvalet...
+msgs_per_node: 64, msg_size: 1024
+Init done!
+main: Using 12 threads
+main - update_percentage: -1
+main launching pthread_create runworker
+main launching pthread_create runworker
+main launching pthread_create runworker
+main launching pthread_create runworker
+main launching pthread_create runworker
+main launching pthread_create runworker
+main launching pthread_create runworker
+Bound worker thread 0 to core 3
+Bound worker thread 4 to core 7
+Bound worker thread 1 to core 4
+Bound worker thread 2 to core 5
+Bound worker thread 3 to core 6
+main launching pthread_create runworker
+Bound worker thread 5 to core 8
+Bound worker thread 6 to core 9
+main launching pthread_create runworker
+Bound worker thread 7 to core 10
+main launching pthread_create runworker
+Bound worker thread 8 to core 11
+main launching pthread_create runworker
+Bound worker thread 9 to core 12
+main launching pthread_create runworker
+Bound worker thread 10 to core 13
+Bound worker thread 11 to core 14
+Hash: Adding 0x10 keys
+Hash: Adding 0x10 keys
+Hash: Adding 0x10 keys
+Hash: Adding 0x10 keys
+Hash: Adding 0x10 keys
+Hash: Adding 0x10 keys
+l3fwd batch size: 32
+l3fwd batch size: 32
+l3fwd batch size: 32
+l3fwd batch size: 32
+l3fwd batch size: 32
+l3fwd batch size: 32
+buf_size: 65536
+buf_size: 65536
+buf_size: 65536
+buf_size: 65536
+buf_size: 65536
+buf_size: 65536
+Hash: Adding 0x10 keys
+l3fwd batch size: 32
+buf_size: 65536
+Hash: Adding 0x10 keys
+l3fwd batch size: 32
+buf_size: 65536
+Hash: Adding 0x10 keys
+l3fwd batch size: 32
+Hash: Adding 0x10 keys
+Hash: Adding 0x10 keys
+Hash: Adding 0x10 keys
+buf_size: 65536
+l3fwd batch size: 32
+l3fwd batch size: 32
+l3fwd batch size: 32
+buf_size: 65536
+buf_size: 65536
+buf_size: 65536
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+WARNING! client done recvd, but a valid packet also recvd, serverid: 6
+recved client doneL3FWD worker: requests serviced:1221
+WARNING! client done recvd, but a valid packet also recvd, serverid: 5
+WARNING! client done recvd, but a valid packet also recvd, serverid: 9
+multithread check: 11
+recved client donerecved client doneL3FWD worker: requests serviced:1368
+L3FWD worker: requests serviced:1192
+multithread check: 11
+WARNING! client done recvd, but a valid packet also recvd, serverid: 3
+multithread check: 11
+recved client doneWARNING! client done recvd, but a valid packet also recvd, serverid: 4
+L3FWD worker: requests serviced:1362
+WARNING! client done recvd, but a valid packet also recvd, serverid: 8
+recved client donerecved client doneL3FWD worker: requests serviced:1202
+multithread check: 11
+multithread check: 11
+WARNING! client done recvd, but a valid packet also recvd, serverid: 7
+L3FWD worker: requests serviced:1298
+recved client donemultithread check: 11
+L3FWD worker: requests serviced:1202
+WARNING! client done recvd, but a valid packet also recvd, serverid: 0
+recved client doneWARNING! client done recvd, but a valid packet also recvd, serverid: 1
+L3FWD worker: requests serviced:1330
+multithread check: 11
+WARNING! client done recvd, but a valid packet also recvd, serverid: 2
+multithread check: 11
+recved client doneL3FWD worker: requests serviced:1362
+recved client doneWARNING! client done recvd, but a valid packet also recvd, serverid: 11
+multithread check: 11
+L3FWD worker: requests serviced:1298
+WARNING! client done recvd, but a valid packet also recvd, serverid: 10
+multithread check: 11
+recved client doneL3FWD worker: requests serviced:1234
+recved client donemultithread check: 11
+L3FWD worker: requests serviced:1234
+multithread check: 11
+[S 2] Thread 0 finished
+nic egress proxy app - terminating
+[S 1] Thread 0 finished
+[S 2] Finished, code 0
+[H] Child 119305 done
+0 119303
+1 119304
+3 119306
+[S 1] Finished, code 0
+[H] Child 119304 done
+0 119303
+3 119306
+[H] Attempting graceful termination
+[H] Killing process 119306
+[H] Child 119306 done
+0 119303
+[H] Killing main thread
+[H] Killing process 119303
+[H] Child 119303 done
+sim elapsed time: 32.3685s
+         :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+         :::::SIM TERMINATED WITH OUT OF RECV BUFFER sim terminated with out of recv_buffer:::::
+         :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+[H] 3926
+[H] 3922
+[H] 3925
+[H] 3922
+average interval: 232
+NF0 average interval: 131
+[H] sampling phase count: 3547
+[H] All children done, exiting

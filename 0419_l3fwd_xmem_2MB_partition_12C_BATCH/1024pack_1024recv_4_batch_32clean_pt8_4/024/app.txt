@@ -1,0 +1,9 @@
+[S 3] WARN: Sched: untested code path, check with Daniel if you see this
+[S 3] WARN: Sched: untested code path, check with Daniel if you see this
+[S 3] WARN: Sched: untested code path, check with Daniel if you see this
+[S 2] WARN: External futex wakes? (0/0)
+[S 2] WARN: External futex wakes? (0/0)
+[S 2] WARN: External futex wakes? (0/0)
+[S 2] WARN: External futex wakes? (0/0)
+[S 2] WARN: External futex wakes? (0/0)
+[H] WARN: Unclean exit of 2 children, termination stats were most likely not dumped
