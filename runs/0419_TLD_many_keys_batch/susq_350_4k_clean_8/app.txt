@@ -1,0 +1,2 @@
+[S 2] WARN: External futex wakes? (0/0)
+[H] WARN: Unclean exit of 1 children, termination stats were most likely not dumped

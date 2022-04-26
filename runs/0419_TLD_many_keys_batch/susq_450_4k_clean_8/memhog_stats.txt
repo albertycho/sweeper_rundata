@@ -1,0 +1,5 @@
+memhog_stats,
+cycles, 26286334
+ipcs, 1.0382332888260493
+cCycle_ratio, 0.48466899187996315
+loop_count_per_cycle, 0.0

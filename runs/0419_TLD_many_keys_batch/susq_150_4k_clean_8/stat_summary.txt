@@ -1,0 +1,70 @@
+average interval: 35
+NF0_average interval: 35
+
+MEM:
+
+wr_lat_avg, 333.4613990200202,
+rd_lat_avg, 161.2954695037475,
+rb_dirty_evictions to mem, 1337474,
+
+L3:
+
+NF0:
+
+net_l3_miss_ratio_nic_rb, 1.0,
+net_l3_miss_count_nic_rb, 7555472,
+net_l3_hit_count_nic_rb, 0,
+rb_dirty_evictions to mem, 1337474,
+
+net_l3_miss_ratio_nic_lb, 0.0,
+net_l3_miss_count_nic_lb, 0,
+net_l3_hit_count_nic_lb, 7612176,
+
+net_l3_miss_ratio_core_rb, 0.17637488224434558,
+net_l3_miss_count_core_rb, 1342594,
+net_l3_hit_count_core_rb, 6269567,
+
+net_l3_miss_ratio_core_lb, 0.001328400874390449,
+net_l3_miss_count_core_lb, 10112,
+net_l3_hit_count_core_lb, 7602048,
+
+app_l3_miss_ratio, 0.9156658653575137,
+app_l3_miss, 730955,
+app_l3_hit , 67322,
+
+NNF:
+
+app_l3_miss_ratio_NNF, 0,
+app_l3_miss_NNF, 0,
+app_l3_hit_NNF , 0,
+
+OLD appl3_miss_ratio, 0.9156658653575137,
+OLD appl3_miss, 730955,
+OLD appl3_hit , 67322,
+
+WAYS:
+non_ddio_ways_miss_rate , 0.01869436348096308,
+ddio_ways_miss_rate , 0.3748924530693598,
+l3misses ,    9639133,
+
+mem accesses        ,3512030,
+app_dirty_evict       ,83738,
+rb_dirty_evict        ,1337468,
+lb_dirty_evict        ,8051,
+NF_app_mem_access    ,730955,
+memhog_app_mem_access,0,
+lb_mem_access        ,10112,
+rb_mem_access        ,1342594,
+memory_controller_4_bandwidth.txt avgbw: 5.144776211155524
+memory_controller_1_bandwidth.txt avgbw: 5.149588998450225
+memory_controller_3_bandwidth.txt avgbw: 5.133666083338825
+memory_controller_6_bandwidth.txt avgbw: 5.133107179143653
+memory_controller_7_bandwidth.txt avgbw: 5.109705220929221
+memory_controller_2_bandwidth.txt avgbw: 5.137441638712695
+memory_controller_0_bandwidth.txt avgbw: 5.116032962558866
+memory_controller_5_bandwidth.txt avgbw: 5.121143873923505
+memhog_stats,
+cycles, 17046422
+ipcs, 1.5964348412822351
+cCycle_ratio, 0.21790520028191254
+loop_count_per_cycle, 0.0

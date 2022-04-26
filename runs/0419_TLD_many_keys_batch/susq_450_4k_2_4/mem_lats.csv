@@ -1,0 +1,55 @@
+
+MEM:
+
+wr_lat_avg, 1806.8619974989274,
+rd_lat_avg, 581.3692959904993,
+rb_dirty_evictions to mem, 7532758,
+
+L3:
+
+NF0:
+
+net_l3_miss_ratio_nic_rb, 0.9819082969984735,
+net_l3_miss_count_nic_rb, 7451380,
+net_l3_hit_count_nic_rb, 137292,
+rb_dirty_evictions to mem, 7532758,
+
+net_l3_miss_ratio_nic_lb, 0.0,
+net_l3_miss_count_nic_lb, 0,
+net_l3_hit_count_nic_lb, 7612160,
+
+net_l3_miss_ratio_core_rb, 0.45781552311399726,
+net_l3_miss_count_core_rb, 3484976,
+net_l3_hit_count_core_rb, 4127208,
+
+net_l3_miss_ratio_core_lb, 0.0001774791911888347,
+net_l3_miss_count_core_lb, 1351,
+net_l3_hit_count_core_lb, 7610809,
+
+app_l3_miss_ratio, 0.8589765655965608,
+app_l3_miss, 873367,
+app_l3_hit , 143386,
+
+NNF:
+
+app_l3_miss_ratio_NNF, 0,
+app_l3_miss_NNF, 0,
+app_l3_hit_NNF , 0,
+
+OLD appl3_miss_ratio, 0.8589765655965608,
+OLD appl3_miss, 873367,
+OLD appl3_hit , 143386,
+
+WAYS:
+non_ddio_ways_miss_rate , 0.1958801312554759,
+ddio_ways_miss_rate , 0.5676255227866599,
+l3misses ,    11811074,
+
+mem accesses        ,12075796,
+app_dirty_evict       ,193515,
+rb_dirty_evict        ,7532750,
+lb_dirty_evict        ,1219,
+NF_app_mem_access    ,873367,
+memhog_app_mem_access,0,
+lb_mem_access        ,1351,
+rb_mem_access        ,3484976,

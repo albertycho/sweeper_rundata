@@ -1,0 +1,4 @@
+memory_controller_1_bandwidth.txt avgbw: 13.683151258242688
+memory_controller_3_bandwidth.txt avgbw: 13.673688600954643
+memory_controller_2_bandwidth.txt avgbw: 13.677773148927958
+memory_controller_0_bandwidth.txt avgbw: 13.679628876232444
