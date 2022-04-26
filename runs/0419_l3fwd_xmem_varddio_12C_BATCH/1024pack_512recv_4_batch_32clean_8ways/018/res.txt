@@ -1,0 +1,642 @@
+[H] Starting zsim, built Tue Apr 19 13:56:14 EDT 2022 (rev albert_dev_211012:275:07f8781:47fc 332+ 51425- c9b5d7b5)
+[H] Creating global segment, 65536 MBs
+[H] Global segment shmid = 1670840326
+[H] Deadlock detection ON
+[S 0] Started instance
+[S 3] Started instance
+[S 2] Started instance
+[S 0] matrix A,B,C allocated
+[S 1] Started instance
+[S 0] contention sim init, tid = 0, firstD = 0, supD = 1
+[S 0] Started RR scheduler, quantum=50 phases
+[S 0] loadGenName: lg1
+[S 0] mem-0: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-0: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-1: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-1: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-2: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-2: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-3: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-3: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] num server cores: 12
+
+[S 0] nicInfo->num_ddio_ways: 8
+[S 0] init: gmSize: 65536 gm_size: 0
+[S 0] Initialized system
+[S 0] HDF5 backend: Opening /shared/acho44/0419_l3fwd_xmem_varddio_12C_BATCH/1024pack_512recv_4_batch_32clean_8ways/018/zsim.h5
+[S 0] HDF5 backend: Created table, 120464 bytes/record, 9 records/write
+[S 0] HDF5 backend: Opening /shared/acho44/0419_l3fwd_xmem_varddio_12C_BATCH/1024pack_512recv_4_batch_32clean_8ways/018/zsim-ev.h5
+[S 0] HDF5 backend: Created table, 120464 bytes/record, 2 records/write
+[S 0] HDF5 backend: Opening /shared/acho44/0419_l3fwd_xmem_varddio_12C_BATCH/1024pack_512recv_4_batch_32clean_8ways/018/zsim-cmp.h5
+[S 0] HDF5 backend: Created table, 11584 bytes/record, 1 records/write
+[S 0] Initialization complete
+[H] Attached to global heap
+[S 1] Started process, PID 317070
+[S 1] procMask: 0x400000000000000
+[S 1] [1] Adjusting clocks, domain 0, de-ffwd 0
+[S 0] Started process, PID 317069
+[S 0] procMask: 0x0
+[S 1] vDSO info initialized
+[S 0] vDSO info initialized
+[S 3] Started process, PID 317068
+[S 3] procMask: 0xc00000000000000
+[S 3] vDSO info initialized
+[S 2] Started process, PID 317071
+[S 2] procMask: 0x800000000000000
+[S 1] Thread 0 starting
+[S 1] FF control Thread TID 317074
+[S 2] vDSO info initialized
+[S 0] Started contention simulation thread 0
+[S 0] Thread 0 starting
+[S 0] Started scheduler watchdog thread
+[S 0] FF control Thread TID 317075
+[S 2] Thread 0 starting
+[S 2] FF control Thread TID 317077
+[S 3] Thread 0 starting
+[S 3] FF control Thread TID 317076
+[S 1] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe9a0
+[S 0] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe9b0
+zsim p1: xchg rbx rbx caught!
+zsim p0: xchg rbx rbx caught!
+[S 0] nic ingress pid:0, cid:0
+[S 1] nic egress  pid:1, cid:1
+[S 2] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe880
+[S 3] [0] Post-patching SYS_sched_getaffinity size 512 cpuset 0x673cc0
+[S 2] Thread 2 starting
+[S 2] Thread 3 starting
+[S 2] Thread 4 starting
+[S 2] Thread 5 starting
+[S 2] Thread 6 starting
+[S 2] Thread 7 starting
+[S 2] Thread 8 starting
+[S 2] [3] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffe090ee50
+[S 2] [5] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffde6fae50
+[S 2] [2] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffe1a18e50
+[S 2] [8] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdb3dce50
+[S 2] [4] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdf804e50
+[S 2] [6] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdd5f0e50
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [2/6] accept (202) @ 0x7fffe29ed15a
+[S 0] Blacklisting from future fake leaves: [2] accept @ 0x7fffe29ed15a | arg0 0x7fffe2c9e780 arg1 0x80
+[S 2] Thread 9 starting
+[S 2] [9] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffda2b4e50
+[S 2] [7] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdc4e6e50
+[S 2] Thread 10 starting
+[S 2] [10] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd91aae50
+[S 2] Time slice ended, context-switched 1 threads, runQueue size 0, available 26
+[S 2]  State:   0r 65536r 131072r 196608r 131075r 131076r 131077r 131078r 131079r 131080r 131081r 131082r ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+[S 3] newCid!=cid
+[S 2] Thread 11 starting
+[S 2] [11] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd3ffee50
+[S 2] Thread 12 starting
+[S 2] [12] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffcb7fde50
+[S 2] Thread 13 starting
+[S 2] [13] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffc9ff8e50
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [2/0] accept (202) @ 0x7fffe30b998b
+[S 0] Blacklisting from future fake leaves: [2] accept @ 0x7fffe30b998b | arg0 0x7fffe1a199d0 arg1 0x0
+[S 3] Time slice ended, context-switched 1 threads, runQueue size 0, available 26
+[S 3]  State:   0r 65536r 131072o 131074r 131075r 131076r 131077r 131078r 131079r 131080r 131081r 131082r 131083r 196608r 131085r ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+[S 3] newCid!=cid
+[S 3] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe560
+zsim p3: xchg rbx rbx caught!
+[S 3] ROI_END, entering fast-forward
+[S 3] registered_non_net_core_count: 1, expected_non_net_core_count: 12
+
+[S 3] Thread 0 entering fast-forward
+[S 3] newCid!=cid
+Bound xmem main thread to core
+
+Working set per thread:               2621440 B == 2560 KB == 2 MB (640 pages)
+Config done
+
+-------- Running Benchmark: Test #1T (Throughput) ----------
+CPU NUMA Node: 0
+Memory NUMA Node: 0
+Chunk Size: 64-bit
+Access Pattern: random
+Read/Write Mode: read
+Number of worker threads: 12
+
+[S 3] ROI_BEGIN, exiting fast-forward
+[S 3] [3] Adjusting clocks, domain 0, de-ffwd 1
+[S 3] Thread 0 starting
+[S 3] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe400
+[S 3] Thread 2 starting
+[S 3] Thread 3 starting
+[S 3] Thread 4 starting
+[S 3] Thread 5 starting
+[S 3] Thread 6 starting
+[S 3] Thread 7 starting
+[S 3] Thread 8 starting
+[S 3] Thread 9 starting
+[S 3] Thread 10 starting
+[S 3] Thread 11 starting
+[S 3] Thread 12 starting
+[S 3] Thread 13 starting
+[S 0] Detected possible stall due to fake leaves (3 current)
+[S 0]  [3/8] accept (202) @ 0x7fffe23cf15a
+[S 0]  [3/5] accept (202) @ 0x7fffe23cf15a
+[S 0]  [3/3] accept (202) @ 0x7fffe23cf15a
+[S 0] Detected possible stall due to fake leaves (2 current)
+[S 0]  [3/5] accept (202) @ 0x7fffe23cf15a
+[S 0]  [3/3] accept (202) @ 0x7fffe23cf15a
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [3/3] accept (202) @ 0x7fffe23cf15a
+[S 0] Blacklisting from future fake leaves: [3] accept @ 0x7fffe23cf15a | arg0 0x7fffe26807f0 arg1 0x80
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [3/0] accept (202) @ 0x7fffe30b198b
+[S 0] Blacklisting from future fake leaves: [3] accept @ 0x7fffe30b198b | arg0 0x7fffdfd1d9d0 arg1 0x0
+Xmem launching worker threads
+Bound xmem main thread to core
+locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu 1916locking to cpu locking to cpu 152324
+
+18locking to cpu 17locking to cpu 25locking to cpu locking to cpu 
+
+
+
+
+20262122[S 3] [2] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdfd1cdb0
+[S 3] [11] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd63c2db0
+
+
+
+
+
+[S 3] [4] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffddb08db0
+[S 3] [3] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdec12db0
+[S 3] [10] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd74ccdb0
+[S 3] [5] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdc9fedb0
+[S 3] [6] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdb8f4db0
+[S 3] [13] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd4ab7db0
+[S 3] [7] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffda7eadb0
+X-Mem pinned to cpu 17
+[S 3] [12] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd5bc1db0
+[S 3] [9] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd85d6db0
+X-Mem pinned to cpu 16
+X-Mem pinned to cpu 19
+X-Mem pinned to cpu 23
+[S 3] [8] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd96e0db0
+X-Mem pinned to cpu 26
+X-Mem pinned to cpu 18
+X-Mem pinned to cpu 15
+X-Mem pinned to cpu 20
+X-Mem pinned to cpu 24
+X-Mem pinned to cpu 22
+X-Mem pinned to cpu 25
+X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu 21
+X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu 24252316181526
+
+
+22
+
+192021
+
+
+X-Mem prime meme warmup begin
+
+17
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+zsim p3: xchg rbx rbx caught!
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+zsim p2: xchg rbx rbx caught!
+zsim p2: xchg rbx rbx caught!
+[S 2] core 7 registered LBUF at addrs 799353667648
+[S 2] core 6 registered LBUF at addrs 799354650688
+[S 2] core 4 registered LBUF at addrs 799355371584
+[S 2] core 4 registered WQ at addrs 799010183168
+[S 2] core 6 registered WQ at addrs 799010257344
+[S 2] core 4 registered CQ at addrs 799010170816
+[S 2] core 6 registered CQ at addrs 799010244992
+[S 2] core 7 registered WQ at addrs 799010294464
+[S 2] core 7 registered CQ at addrs 799010282112
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [2/3] accept (202) @ 0x7fffe30bf152
+[S 0] Blacklisting from future fake leaves: [2] accept @ 0x7fffe30bf152 | arg0 0x717e74 arg1 0x80
+[S 2] core 9 registered LBUF at addrs 799336628288
+[S 2] core 9 registered WQ at addrs 799010368640
+[S 2] core 9 registered CQ at addrs 799010356288
+[S 2] core 10 registered LBUF at addrs 799338201152
+[S 2] core 10 registered WQ at addrs 799010405696
+[S 2] core 10 registered CQ at addrs 799010393344
+[S 2] core 5 registered LBUF at addrs 799450822912
+[S 2] core 5 registered WQ at addrs 799010220288
+[S 2] core 5 registered CQ at addrs 799010207936
+[S 2] core 8 registered LBUF at addrs 799451019648
+[S 2] core 8 registered WQ at addrs 799010331520
+[S 2] core 8 registered CQ at addrs 799010319168
+[S 2] core 11 registered LBUF at addrs 799451085248
+[S 2] core 11 registered WQ at addrs 799010442816
+[S 2] core 11 registered CQ at addrs 799010430464
+[S 2] core 14 registered LBUF at addrs 799451150976
+[S 2] core 14 registered WQ at addrs 799010554048
+[S 2] core 14 registered CQ at addrs 799010541696
+[S 2] core 12 registered LBUF at addrs 799451216576
+[S 2] core 3 registered LBUF at addrs 799451282240
+[S 2] core 12 registered WQ at addrs 799010479872
+[S 2] core 12 registered CQ at addrs 799010467520
+[S 2] core 3 registered WQ at addrs 799010146112
+[S 2] core 3 registered CQ at addrs 799010133760
+[S 2] core 13 registered LBUF at addrs 799451347840
+[S 2] core 13 registered WQ at addrs 799010516992
+[S 2] nic init completed
+[S 2] core 13 registered CQ at addrs 799010504640
+[S 0] starting sim time count
+[S 0] first sampling cycle: 21982002
+[S 0] RB space iterated 1-th time: sampling phase 791
+[S 0] done with closed loop warmup!, sampling phase: 1320
+[S 0] Spillover count during warmup: 0
+[S 2] Heartbeat target 12 reached, marking stats dump
+[S 2] Resetting heartbeat count (for periodic dumps)
+[S 3] Dumping eventual stats for process GROUP 2 (heartbeats)
+[S 0] RB space iterated 2-th time: sampling phase 1336
+[S 0] RB space iterated 3-th time: sampling phase 1674
+[S 0] RB space iterated 4-th time: sampling phase 2012
+[S 0] RB space iterated 5-th time: sampling phase 2350
+[S 0] RB space iterated 6-th time: sampling phase 2688
+[S 0] RB space iterated 7-th time: sampling phase 3026
+[S 0] RB space iterated 8-th time: sampling phase 3364
+[S 0] RB space iterated 9-th time: sampling phase 3702
+[S 0] RB space iterated 10-th time: sampling phase 4040
+[S 0] RB space iterated 11-th time: sampling phase 4378
+[S 0] RB space iterated 12-th time: sampling phase 4715
+[S 0] RB space iterated 13-th time: sampling phase 5053
+[S 0] RB space iterated 14-th time: sampling phase 5391
+[S 0] RB space iterated 15-th time: sampling phase 5729
+[S 0] RB space iterated 16-th time: sampling phase 6067
+[S 0] RB space iterated 17-th time: sampling phase 6405
+[S 0] RB space iterated 18-th time: sampling phase 6743
+[S 0] RB space iterated 19-th time: sampling phase 7081
+[S 0] RB space iterated 20-th time: sampling phase 7419
+[S 0] RB space iterated 21-th time: sampling phase 7757
+[S 0] RB space iterated 22-th time: sampling phase 8095
+[S 0] RB space iterated 23-th time: sampling phase 8433
+[S 0] RB space iterated 24-th time: sampling phase 8771
+[S 0] RB space iterated 25-th time: sampling phase 9108
+[S 0] RB space iterated 26-th time: sampling phase 9446
+[S 0] RB space iterated 27-th time: sampling phase 9784
+[S 0] RB space iterated 28-th time: sampling phase 10122
+[S 0] RB space iterated 29-th time: sampling phase 10460
+[S 0] RB space iterated 30-th time: sampling phase 10798
+[S 0] RB space iterated 31-th time: sampling phase 11136
+[S 0] RB space iterated 32-th time: sampling phase 11474
+[S 0] RB space iterated 33-th time: sampling phase 11812
+[S 0] RB space iterated 34-th time: sampling phase 12150
+[S 0] RB space iterated 35-th time: sampling phase 12488
+[S 0] RB space iterated 36-th time: sampling phase 12826
+[S 0] RB space iterated 37-th time: sampling phase 13163
+[S 0] RB space iterated 38-th time: sampling phase 13501
+[S 0] RB space iterated 39-th time: sampling phase 13839
+[S 0] RB space iterated 40-th time: sampling phase 14177
+[S 0] RB space iterated 41-th time: sampling phase 14515
+[S 0] RB space iterated 42-th time: sampling phase 14853
+[S 0] RB space iterated 43-th time: sampling phase 15191
+[S 0] RB space iterated 44-th time: sampling phase 15529
+[S 0] RB space iterated 45-th time: sampling phase 15867
+[S 0] RB space iterated 46-th time: sampling phase 16205
+[S 0] RB space iterated 47-th time: sampling phase 16543
+[S 0] RB space iterated 48-th time: sampling phase 16881
+[S 0] RB space iterated 49-th time: sampling phase 17219
+[S 0] RB space iterated 50-th time: sampling phase 17556
+[S 0] RB space iterated 51-th time: sampling phase 17894
+[S 0] RB space iterated 52-th time: sampling phase 18232
+[S 0] RB space iterated 53-th time: sampling phase 18570
+[S 0] RB space iterated 54-th time: sampling phase 18908
+[S 0] RB space iterated 55-th time: sampling phase 19246
+[S 0] RB space iterated 56-th time: sampling phase 19584
+[S 0] RB space iterated 57-th time: sampling phase 19922
+[S 0] RB space iterated 58-th time: sampling phase 20260
+[S 0] RB space iterated 59-th time: sampling phase 20598
+[S 0] RB space iterated 60-th time: sampling phase 20936
+[S 0] RB space iterated 61-th time: sampling phase 21274
+[S 0] RB space iterated 62-th time: sampling phase 21611
+[S 0] RB space iterated 63-th time: sampling phase 21949
+[S 0] RB space iterated 64-th time: sampling phase 22287
+[S 0] RB space iterated 65-th time: sampling phase 22625
+[S 0] RB space iterated 66-th time: sampling phase 22963
+[S 0] RB space iterated 67-th time: sampling phase 23301
+[S 0] RB space iterated 68-th time: sampling phase 23639
+[S 0] RB space iterated 69-th time: sampling phase 23977
+[S 0] RB space iterated 70-th time: sampling phase 24315
+[S 0] RB space iterated 71-th time: sampling phase 24653
+[S 0] RB space iterated 72-th time: sampling phase 24991
+[S 0] RB space iterated 73-th time: sampling phase 25329
+[S 0] RB space iterated 74-th time: sampling phase 25667
+[S 0] RB space iterated 75-th time: sampling phase 26004
+[S 0] RB space iterated 76-th time: sampling phase 26342
+[S 0] RB space iterated 77-th time: sampling phase 26680
+[S 0] RB space iterated 78-th time: sampling phase 27018
+[S 0] RB space iterated 79-th time: sampling phase 27356
+[S 0] RB space iterated 80-th time: sampling phase 27694
+[S 0] RB space iterated 81-th time: sampling phase 28032
+[S 0] all packets sent at sampling phase 28160, mem_bw_len: 27844
+[S 1] all packets received
+[S 2] proc 2 deregistered with NIC
+cycle: 50199000
+[S 2] proc 2 deregistered with NIC
+cycle: 50200000
+[S 2] proc 2 deregistered with NIC
+cycle: 50201000
+[S 2] proc 2 deregistered with NIC
+cycle: 50202000
+[S 2] proc 2 deregistered with NIC
+cycle: 50204000
+[S 2] Heartbeat target 12 reached, marking stats dump
+[S 2] Resetting heartbeat count (for periodic dumps)
+[S 2] proc 2 deregistered with NIC
+cycle: 50204000
+[S 2] Dumping eventual stats for process GROUP 2 (heartbeats)
+[S 2] proc 2 deregistered with NIC
+cycle: 50206000
+[S 2] Thread 6 finished
+[S 2] Thread 9 finished
+[S 2] Thread 3 finished
+[S 2] Thread 8 finished
+[S 2] Thread 11 finished
+[S 2] proc 2 deregistered with NIC
+cycle: 50207000
+[S 2] proc 2 deregistered with NIC
+cycle: 50207000
+[S 2] proc 2 deregistered with NIC
+cycle: 50207000
+[S 2] Thread 12 finished
+[S 2] Thread 5 finished
+[S 2] proc 2 deregistered with NIC
+cycle: 50208000
+[S 2] proc 2 deregistered with NIC
+cycle: 50208000
+[S 2] Thread 13 finished
+[S 2] Thread 7 finished
+[S 2] Thread 2 finished
+[S 2] Thread 10 finished
+[S 2] Thread 4 finished
+Bound herd main thread to core
+l3fwd batchsize set to 32
+l3fwd packetsize set to 1024
+l3fwd qps set to 12
+l3fwd num_threads set to 12
+l3fwd num_keys set to 16
+l3fwd log_cap set to 4194304
+GETOPT FAILED (1 FAIL expected)
+DEBUG /nethome/acho44/zsim/zSim/src/libzsim/zsim_nic_defines.cpp:302: Ctx 7 was allocated starting from address 0x0x718000. Number of pages: 2
+Ctx buffer was registered, ctx_size=16384, 2 pages.
+Pointer to pgas: 0x718000
+Beginning map of send/recv paired memory locations...
+Succeeded mapping send/recv slots for rpcvalet...
+msgs_per_node: 64, msg_size: 1024
+Init done!
+main: Using 12 threads
+main - update_percentage: -1
+main launching pthread_create runworker
+main launching pthread_create runworker
+main launching pthread_create runworker
+main launching pthread_create runworker
+main launching pthread_create runworker
+main launching pthread_create runworker
+main launching pthread_create runworker
+main launching pthread_create runworker
+Bound worker thread 2 to core 5
+Bound worker thread 4 to core 7
+Bound worker thread 3 to core 6
+Bound worker thread 1 to core 4
+main launching pthread_create runworker
+Bound worker thread 7 to core 10
+Bound worker thread 6 to core 9
+Bound worker thread 5 to core 8
+main launching pthread_create runworker
+Bound worker thread 8 to core 11
+Bound worker thread 0 to core 3
+main launching pthread_create runworker
+Bound worker thread 9 to core 12
+main launching pthread_create runworker
+Bound worker thread 11 to core 14
+Bound worker thread 10 to core 13
+Hash: Adding 0x10 keys
+l3fwd batch size: 32
+Hash: Adding 0x10 keys
+Hash: Adding 0x10 keys
+l3fwd batch size: 32
+l3fwd batch size: 32
+buf_size: 65536
+buf_size: 65536
+buf_size: 65536
+Hash: Adding 0x10 keys
+Hash: Adding 0x10 keys
+Hash: Adding 0x10 keys
+l3fwd batch size: 32
+l3fwd batch size: 32
+l3fwd batch size: 32
+buf_size: 65536
+buf_size: 65536
+Hash: Adding 0x10 keys
+buf_size: 65536
+l3fwd batch size: 32
+Hash: Adding 0x10 keys
+buf_size: 65536
+l3fwd batch size: 32
+buf_size: 65536
+Hash: Adding 0x10 keys
+l3fwd batch size: 32
+Hash: Adding 0x10 keys
+Hash: Adding 0x10 keys
+buf_size: 65536
+l3fwd batch size: 32
+l3fwd batch size: 32
+buf_size: 65536
+buf_size: 65536
+Hash: Adding 0x10 keys
+l3fwd batch size: 32
+buf_size: 65536
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+l3fwd: before entering while loop
+WARNING: got done sending after rpcrecv, serverid: 10, batch_counter: 2
+WARNING: got done sending after rpcrecv, serverid: 11, batch_counter: 1
+WARNING: got done sending after rpcrecv, serverid: 3, batch_counter: 2
+WARNING: got done sending after rpcrecv, serverid: 10, batch_counter: 3
+WARNING: got done sending after rpcrecv, serverid: 0, batch_counter: 1
+WARNING: got done sending after rpcrecv, serverid: 11, batch_counter: 2
+WARNING: got done sending after rpcrecv, serverid: 10, batch_counter: 4
+WARNING: got done sending after rpcrecv, serverid: 1, batch_counter: 1
+WARNING: got done sending after rpcrecv, serverid: 10, batch_counter: 5
+WARNING: got done sending after rpcrecv, serverid: 5, batch_counter: 1
+WARNING: got done sending after rpcrecv, serverid: 11, batch_counter: 3
+WARNING: got done sending after rpcrecv, serverid: 0, batch_counter: 2
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 1
+WARNING: got done sending after rpcrecv, serverid: 6, batch_counter: 1
+WARNING: got done sending after rpcrecv, serverid: 10, batch_counter: 6
+WARNING: got done sending after rpcrecv, serverid: 2, batch_counter: 1
+WARNING: got done sending after rpcrecv, serverid: 8, batch_counter: 1
+WARNING: got done sending after rpcrecv, serverid: 5, batch_counter: 2
+WARNING: got done sending after rpcrecv, serverid: 11, batch_counter: 4
+WARNING: got done sending after rpcrecv, serverid: 1, batch_counter: 2
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 2
+WARNING: got done sending after rpcrecv, serverid: 6, batch_counter: 2
+WARNING: got done sending after rpcrecv, serverid: 10, batch_counter: 7
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 1
+WARNING: got done sending after rpcrecv, serverid: 2, batch_counter: 2
+WARNING: got done sending after rpcrecv, serverid: 8, batch_counter: 2
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 1
+WARNING: got done sending after rpcrecv, serverid: 10, batch_counter: 8
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 3
+WARNING: got done sending after rpcrecv, serverid: 6, batch_counter: 3
+WARNING: got done sending after rpcrecv, serverid: 5, batch_counter: 3
+WARNING: got done sending after rpcrecv, serverid: 11, batch_counter: 5
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 2
+WARNING: got done sending after rpcrecv, serverid: 2, batch_counter: 3
+WARNING: got done sending after rpcrecv, serverid: 8, batch_counter: 3
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 2
+WARNING: got done sending after rpcrecv, serverid: 10, batch_counter: 9
+WARNING: got done sending after rpcrecv, serverid: 5, batch_counter: 4
+WARNING: got done sending after rpcrecv, serverid: 8, batch_counter: 4
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 4
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 3
+WARNING: got done sending after rpcrecv, serverid: 2, batch_counter: 4
+WARNING: got done sending after rpcrecv, serverid: 6, batch_counter: 4
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 3
+WARNING: got done sending after rpcrecv, serverid: 10, batch_counter: 10
+WARNING: got done sending after rpcrecv, serverid: 5, batch_counter: 5
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 5
+WARNING: got done sending after rpcrecv, serverid: 2, batch_counter: 5
+WARNING: got done sending after rpcrecv, serverid: 10, batch_counter: 11
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 4
+WARNING: got done sending after rpcrecv, serverid: 6, batch_counter: 5
+WARNING: got done sending after rpcrecv, serverid: 8, batch_counter: 5
+WARNING: got done sending after rpcrecv, serverid: 5, batch_counter: 6
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 4
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 6
+WARNING: got done sending after rpcrecv, serverid: 10, batch_counter: 12
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 5
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 5
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 6
+WARNING: got done sending after rpcrecv, serverid: 5, batch_counter: 7
+WARNING: got done sending after rpcrecv, serverid: 8, batch_counter: 6
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 7
+WARNING: got done sending after rpcrecv, serverid: 6, batch_counter: 6
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 6
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 7
+WARNING: got done sending after rpcrecv, serverid: 8, batch_counter: 7
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 8
+WARNING: got done sending after rpcrecv, serverid: 8, batch_counter: 8
+WARNING: got done sending after rpcrecv, serverid: 6, batch_counter: 7
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 8
+WARNING: got done sending after rpcrecv, serverid: 5, batch_counter: 8
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 7
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 9
+WARNING: got done sending after rpcrecv, serverid: 8, batch_counter: 9
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 9
+WARNING: got done sending after rpcrecv, serverid: 5, batch_counter: 9
+WARNING: got done sending after rpcrecv, serverid: 6, batch_counter: 8
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 10
+WARNING: got done sending after rpcrecv, serverid: 8, batch_counter: 10
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 10
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 8
+WARNING: got done sending after rpcrecv, serverid: 8, batch_counter: 11
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 11
+WARNING: got done sending after rpcrecv, serverid: 8, batch_counter: 12
+WARNING: got done sending after rpcrecv, serverid: 5, batch_counter: 10
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 9
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 11
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 12
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 12
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 10
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 13
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 14
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 13
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 11
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 15
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 12
+WARNING: got done sending after rpcrecv, serverid: 9, batch_counter: 14
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 13
+WARNING: got done sending after rpcrecv, serverid: 4, batch_counter: 16
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 14
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 15
+WARNING: got done sending after rpcrecv, serverid: 7, batch_counter: 16
+recved client donerecved client doneWARNING! client done recvd, but a valid packet also recvd, serverid: 7
+recved client donerecved client doneL3FWD worker: requests serviced:42178
+recved client donemultithread check: 10
+recved client donerecved client doneL3FWD worker: requests serviced:41442
+recved client donemultithread check: 10
+L3FWD worker: requests serviced:41722
+L3FWD worker: requests serviced:41566
+multithread check: 10
+L3FWD worker: requests serviced:41588
+recved client donemultithread check: 10
+recved client doneL3FWD worker: requests serviced:41472
+recved client donemultithread check: 10
+recved client donemultithread check: 10
+L3FWD worker: requests serviced:41876
+L3FWD worker: requests serviced:41596
+multithread check: 10
+L3FWD worker: requests serviced:41527
+L3FWD worker: requests serviced:41556
+multithread check: 10
+L3FWD worker: requests serviced:41879
+multithread check: 10
+L3FWD worker: requests serviced:41598
+multithread check: 10
+multithread check: 10
+multithread check: 10
+[S 2] Thread 0 finished
+nic egress proxy app - terminating
+[S 1] Thread 0 finished
+0 317064
+1 317065
+2 317066
+3 317067
+[S 2] Finished, code 0
+[H] Child 317066 done
+0 317064
+1 317065
+3 317067
+[S 1] Finished, code 0
+[H] Child 317065 done
+0 317064
+3 317067
+[H] Attempting graceful termination
+[H] Killing process 317067
+[H] Child 317067 done
+0 317064
+[H] Killing main thread
+[H] Killing process 317064
+[H] Child 317064 done
+sim elapsed time: 244.808s
+[H] 28221
+[H] 28235
+[H] 28227
+[H] 28216
+average interval: 56
+NF0 average interval: 56
+[H] sampling phase count: 28160
+[H] All children done, exiting

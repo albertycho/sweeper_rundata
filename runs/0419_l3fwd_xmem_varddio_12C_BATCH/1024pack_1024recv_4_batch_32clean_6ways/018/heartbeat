@@ -1,0 +1,9 @@
+Running on: keg1
+Start time: Tue Apr 19 19:24:09 2022
+Heartbeat time: Tue Apr 19 19:27:25 2022
+Stats since start:
+ 50214 phases
+ 50214000 cycles
+ 256193 cycles/s
+Stats since last heartbeat (6s):
+ 210333 cycles/s

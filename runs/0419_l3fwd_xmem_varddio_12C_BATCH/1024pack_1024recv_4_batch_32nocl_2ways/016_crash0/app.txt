@@ -1,0 +1,17 @@
+[S 3] WARN: Sched: untested code path, check with Daniel if you see this
+[S 3] WARN: Sched: untested code path, check with Daniel if you see this
+[S 2] Failed assertion on build/opt/scheduler.cpp:354 'unmatchedFutexWakeups <= maxAllowedFutexWakeups' (with '1 <= 0')
+[H] WARN: Stalled for 20 secs so far
+[H] WARN: Stalled for 30 secs so far
+[H] WARN: Stalled for 40 secs so far
+[H] WARN: Stalled for 50 secs so far
+[H] WARN: Stalled for 60 secs so far
+[H] WARN: Stalled for 70 secs so far
+[H] WARN: Stalled for 80 secs so far
+[H] WARN: Stalled for 90 secs so far
+[H] WARN: Stalled for 100 secs so far
+[H] WARN: Stalled for 110 secs so far
+[H] WARN: Stalled for 120 secs so far
+[H] WARN: Stalled for 130 secs so far
+[H] WARN: Deadlock detected, killing children
+[H] WARN: Hard death at exit (1 children running), killing the whole process tree

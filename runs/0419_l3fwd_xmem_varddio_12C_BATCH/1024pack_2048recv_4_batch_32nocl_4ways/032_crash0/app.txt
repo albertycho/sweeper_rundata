@@ -1,0 +1,7 @@
+[S 2] WARN: Sched: untested code path, check with Daniel if you see this
+[H] WARN: Hard death, killing the whole process tree
+[H] Panic on build/opt/zsim_harness.cpp:166: SIGKILLs sent -- exiting
+[H] WARN: Hard death at exit (4 children running), killing the whole process tree
+[S 3] WARN: [0] ContextChange, reason FATAL_SIGNAL, inSyscall 0
+[S 2] WARN: [0] ContextChange, reason FATAL_SIGNAL, inSyscall 0
+[S 0] WARN: [0] ContextChange, reason FATAL_SIGNAL, inSyscall 0

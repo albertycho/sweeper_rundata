@@ -1,0 +1,45 @@
+[S 3] WARN: Sched: untested code path, check with Daniel if you see this
+[S 3] WARN: Sched: untested code path, check with Daniel if you see this
+[S 3] WARN: Sched: untested code path, check with Daniel if you see this
+[S 2] [6] Internal exception detected:
+[S 2] [6]  Code: 6
+[S 2] [6]  Address: 0x7ffff62692f6
+[S 2] [6]  Description: Exception Code: PRIVILEGED_INS. Exception Address = 0x7ffff62692f6
+[S 2] [6] Backtrace (22/40 max frames)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/zsim.cpp:1423 / InternalExceptionHandler(unsigned int, LEVEL_BASE::EXCEPTION_INFO*, LEVEL_VM::PHYSICAL_CONTEXT*, void*)
+[S 2] [6]  :? / LEVEL_PINCLIENT::IEH_CALLBACKS::NotifyInternalException(unsigned int, LEVEL_BASE::EXCEPTION_INFO*, LEVEL_VM::CONTEXT*)
+[S 2] [6]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(_ZN8LEVEL_VM12SIGNALS_IMPL19InternalHandlerSyncEiPN7BARECRT8SIGXINFOEPN5PINVM11ISIGCONTEXTEPPKNS_14SCT_ATTRIBUTESEPNS_5PCTXTEPj+0x444) [0x3043a9454]
+[S 2] [6]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(_ZN8LEVEL_VM12SIGNALS_IMPL20HandlePhysicalSignalEPN7BARECRT8SIGXINFOEPN5PINVM11ISIGCONTEXTE+0x124) [0x3043aa1f4]
+[S 2] [6]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(_ZN5PINVM28SIGNAL_DETAILS_LINUX_INTEL6415InternalHandlerEiPN7BARECRT8SIGXINFOEPv+0xe8) [0x304438c88]
+[S 2] [6]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(BARECRT_SigReturnRt+0) [0x30446603c]
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/g_heap/dlmalloc.h.c:5344 (discriminator 14) / mspace_free
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/galloc.cpp:162 / gm_free(void*)
+[S 2] [6]  /usr/include/c++/5/bits/hashtable.h:1764 / std::_Hashtable<unsigned long, std::pair<unsigned long const, MESITopCC::Entry>, StlGlobAlloc<std::pair<unsigned long const, MESITopCC::Entry> >, std::__detail::_Select1st, std::equal_to<unsigned long>, std::hash<unsigned long>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_erase(unsigned long, std::__detail::_Hash_node_base*, std::__detail::_Hash_node<std::pair<unsigned long const, MESITopCC::Entry>, false>*)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/coherence_ctrls.h:545 / MESICC::processEviction(MemReq const&, unsigned long, int, unsigned long)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/timing_cache.cpp:241 / TimingCache::access(MemReq&)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/coherence_ctrls.cpp:144 / MESIBottomCC::processEviction(unsigned long, int, bool, unsigned long, unsigned int, unsigned int)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/coherence_ctrls.h:547 / MESICC::processEviction(MemReq const&, unsigned long, int, unsigned long)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/cache.cpp:118 / Cache::access(MemReq&)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/coherence_ctrls.cpp:199 / MESIBottomCC::processAccess(unsigned long, int, AccessType, unsigned long, unsigned int, unsigned int, bool)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/coherence_ctrls.h:708 / MESITerminalCC::processAccess(MemReq const&, int, unsigned long, bool, unsigned long*, unsigned long*)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/cache.cpp:142 / Cache::access(MemReq&)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/filter_cache.h:318 / FilterCache::replace(unsigned long, unsigned int, bool, unsigned long, unsigned int, unsigned int, unsigned int, int)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/filter_cache.h:183 / FilterCache::load(unsigned long, unsigned long, unsigned short, unsigned int, unsigned int)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/ooo_core.cpp:322 / OOOCore::bbl(unsigned long, BblInfo*)
+[S 2] [6]  /nethome/acho44/zsim/zSim/build/opt/ooo_core.cpp:671 / OOOCore::BblFunc(unsigned int, unsigned long, BblInfo*)
+[S 2] [6]  [0x7fffe373a8f7]
+Pin app terminated abnormally due to signal 11.
+[H] WARN: Stalled for 20 secs so far
+[H] WARN: Stalled for 30 secs so far
+[H] WARN: Stalled for 40 secs so far
+[H] WARN: Stalled for 50 secs so far
+[H] WARN: Stalled for 60 secs so far
+[H] WARN: Stalled for 70 secs so far
+[H] WARN: Stalled for 80 secs so far
+[H] WARN: Stalled for 90 secs so far
+[H] WARN: Stalled for 100 secs so far
+[H] WARN: Stalled for 110 secs so far
+[H] WARN: Stalled for 120 secs so far
+[H] WARN: Stalled for 130 secs so far
+[H] WARN: Deadlock detected, killing children
+[H] WARN: Hard death at exit (1 children running), killing the whole process tree

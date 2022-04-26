@@ -1,0 +1,312 @@
+[H] Starting zsim, built Tue Apr 19 13:56:14 EDT 2022 (rev albert_dev_211012:275:07f8781:47fc 332+ 51425- c9b5d7b5)
+[H] Creating global segment, 65536 MBs
+[H] Global segment shmid = 1672609795
+[H] Deadlock detection ON
+[S 3] Started instance
+[S 1] Started instance
+[S 2] Started instance
+[S 0] Started instance
+[S 0] matrix A,B,C allocated
+[S 0] contention sim init, tid = 0, firstD = 0, supD = 1
+[S 0] Started RR scheduler, quantum=50 phases
+[S 0] loadGenName: lg1
+[S 0] mem-0: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-0: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-1: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-1: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-2: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-2: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-3: domain 0, 4 ranks/ch 8 banks/rank, tech DDR4-2400, boundLat 55 rd / 10 wr
+[S 0] mem-3: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] num server cores: 12
+
+[S 0] nicInfo->num_ddio_ways: 2
+[S 0] init: gmSize: 65536 gm_size: 0
+[S 0] Initialized system
+[S 0] HDF5 backend: Opening /shared/acho44/0419_l3fwd_xmem_varddio_12C_BATCH/1024pack_2048recv_4_batch_32nocl_2ways/07/zsim.h5
+[S 0] HDF5 backend: Created table, 120464 bytes/record, 9 records/write
+[S 0] HDF5 backend: Opening /shared/acho44/0419_l3fwd_xmem_varddio_12C_BATCH/1024pack_2048recv_4_batch_32nocl_2ways/07/zsim-ev.h5
+[S 0] HDF5 backend: Created table, 120464 bytes/record, 2 records/write
+[S 0] HDF5 backend: Opening /shared/acho44/0419_l3fwd_xmem_varddio_12C_BATCH/1024pack_2048recv_4_batch_32nocl_2ways/07/zsim-cmp.h5
+[S 0] HDF5 backend: Created table, 11584 bytes/record, 1 records/write
+[S 0] Initialization complete
+[S 0] Started process, PID 330943
+[S 0] procMask: 0x0
+[S 0] [0] Adjusting clocks, domain 0, de-ffwd 0
+[S 0] vDSO info initialized
+[S 3] Started process, PID 330941
+[S 3] procMask: 0xc00000000000000
+[S 1] Started process, PID 330940
+[S 2] Started process, PID 330942
+[S 1] procMask: 0x400000000000000
+[S 2] procMask: 0x800000000000000
+[H] Attached to global heap
+[S 3] vDSO info initialized
+[S 1] vDSO info initialized
+[S 2] vDSO info initialized
+[S 0] Thread 0 starting
+[S 0] Started scheduler watchdog thread
+[S 0] Started contention simulation thread 0
+[S 0] FF control Thread TID 330946
+[S 2] Thread 0 starting
+[S 2] FF control Thread TID 330949
+[S 1] Thread 0 starting
+[S 1] FF control Thread TID 330947
+[S 3] Thread 0 starting
+[S 3] FF control Thread TID 330948
+[S 1] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe9a0
+zsim p1: xchg rbx rbx caught!
+[S 1] nic egress  pid:1, cid:1
+[S 0] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe9b0
+zsim p0: xchg rbx rbx caught!
+[S 0] nic ingress pid:0, cid:0
+[S 2] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe880
+[S 3] [0] Post-patching SYS_sched_getaffinity size 512 cpuset 0x673cc0
+[S 2] Thread 2 starting
+[S 2] Thread 3 starting
+[S 2] Thread 4 starting
+[S 2] Thread 5 starting
+[S 2] Thread 6 starting
+[S 2] Thread 7 starting
+[S 2] Thread 8 starting
+[S 2] [8] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdb3dce50
+[S 2] [3] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffe090ee50
+[S 2] [5] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffde6fae50
+[S 2] [4] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdf804e50
+[S 2] [6] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdd5f0e50
+[S 2] [2] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffe1a18e50
+[S 2] Thread 9 starting
+[S 2] [9] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffda2bae50
+[S 2] [7] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdc4e6e50
+[S 0] Detected possible stall due to fake leaves (5 current)
+[S 0]  [2/9] accept (202) @ 0x7fffe29ed15a
+[S 0]  [2/6] accept (202) @ 0x7fffe29ed15a
+[S 0]  [2/4] accept (202) @ 0x7fffe29ed15a
+[S 0]  [2/5] accept (202) @ 0x7fffe29ed15a
+[S 0]  [2/7] accept (202) @ 0x7fffe29ed15a
+[S 0] Detected possible stall due to fake leaves (4 current)
+[S 0]  [2/6] accept (202) @ 0x7fffe29ed15a
+[S 0]  [2/4] accept (202) @ 0x7fffe29ed15a
+[S 0]  [2/5] accept (202) @ 0x7fffe29ed15a
+[S 0]  [2/7] accept (202) @ 0x7fffe29ed15a
+[S 0] Detected possible stall due to fake leaves (3 current)
+[S 0]  [2/4] accept (202) @ 0x7fffe29ed15a
+[S 0]  [2/5] accept (202) @ 0x7fffe29ed15a
+[S 0]  [2/7] accept (202) @ 0x7fffe29ed15a
+[S 0] Detected possible stall due to fake leaves (2 current)
+[S 0]  [2/5] accept (202) @ 0x7fffe29ed15a
+[S 0]  [2/7] accept (202) @ 0x7fffe29ed15a
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [2/7] accept (202) @ 0x7fffe29ed15a
+[S 0] Blacklisting from future fake leaves: [2] accept @ 0x7fffe29ed15a | arg0 0x7fffe2c9e780 arg1 0x80
+[S 2] Thread 10 starting
+[S 2] [10] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd91b0e50
+[S 2] Thread 11 starting
+[S 2] [11] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd3ffee50
+[S 2] Time slice ended, context-switched 1 threads, runQueue size 0, available 26
+[S 2]  State:   0r 65536r 131072o 196608r 131075r 131076r 131077r 131078r 131079r 131080r 131081r 131082r 131083o ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+[S 3] newCid!=cid
+[S 2] Thread 12 starting
+[S 2] [12] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffcbffee50
+[S 2] Thread 13 starting
+[S 2] [13] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffc9ff8e50
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [2/0] accept (202) @ 0x7fffe30b998b
+[S 0] Blacklisting from future fake leaves: [2] accept @ 0x7fffe30b998b | arg0 0x7fffe1a199d0 arg1 0x0
+[S 3] Time slice ended, context-switched 1 threads, runQueue size 0, available 26
+[S 3]  State:   0r 65536r 131072o 131074r 131075r 131076r 131077r 131078r 131079r 131080r 131081r 131082r 131083r 131084r 196608r ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+[S 3] newCid!=cid
+[S 3] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe560
+zsim p3: xchg rbx rbx caught!
+[S 3] ROI_END, entering fast-forward
+[S 3] registered_non_net_core_count: 1, expected_non_net_core_count: 12
+
+[S 3] Thread 0 entering fast-forward
+[S 3] newCid!=cid
+Bound xmem main thread to core
+
+Working set per thread:               2621440 B == 2560 KB == 2 MB (640 pages)
+Config done
+
+-------- Running Benchmark: Test #1T (Throughput) ----------
+CPU NUMA Node: 0
+Memory NUMA Node: 0
+Chunk Size: 64-bit
+Access Pattern: random
+Read/Write Mode: read
+Number of worker threads: 12
+
+[S 3] ROI_BEGIN, exiting fast-forward
+[S 3] [3] Adjusting clocks, domain 0, de-ffwd 1
+[S 3] Thread 0 starting
+[S 3] [0] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffffffe400
+[S 3] Thread 2 starting
+[S 3] Thread 3 starting
+[S 3] Thread 4 starting
+[S 3] Thread 5 starting
+[S 3] Thread 6 starting
+[S 3] Thread 7 starting
+[S 3] Thread 8 starting
+[S 3] Thread 9 starting
+[S 3] Thread 10 starting
+[S 3] Thread 11 starting
+[S 3] Thread 12 starting
+[S 0] Detected possible stall due to fake leaves (2 current)
+[S 0]  [3/4] accept (202) @ 0x7fffe23cf15a
+[S 0]  [3/6] accept (202) @ 0x7fffe23cf15a
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [3/6] accept (202) @ 0x7fffe23cf15a
+[S 0] Blacklisting from future fake leaves: [3] accept @ 0x7fffe23cf15a | arg0 0x7fffe26807f0 arg1 0x80
+[S 3] Thread 13 starting
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [3/0] accept (202) @ 0x7fffe30b198b
+[S 0] Blacklisting from future fake leaves: [3] accept @ 0x7fffe30b198b | arg0 0x7fffdf9be9d0 arg1 0x0
+Xmem launching worker threads
+Bound xmem main thread to core
+locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu locking to cpu 19161826locking to cpu 
+21
+
+locking to cpu 17locking to cpu 23locking to cpu 15
+
+242225
+
+
+20[S 3] [6] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdb595db0
+[S 3] [5] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdc69fdb0
+[S 3] [3] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffde8b3db0
+[S 3] [8] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd9381db0
+
+
+[S 3] [2] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdf9bddb0
+
+[S 3] [10] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd716ddb0
+[S 3] [4] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffdd7a9db0
+[S 3] [7] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffda48bdb0
+[S 3] [13] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffcfffedb0
+[S 3] [11] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd6063db0
+X-Mem pinned to cpu 23
+[S 3] [12] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd5862db0
+X-Mem pinned to cpu X-Mem pinned to cpu 19
+
+[S 3] [9] Pre-patching SYS_sched_setaffinity size 128 cpuset 0x7fffd8277db0
+X-Mem pinned to cpu 20
+X-Mem pinned to cpu 21
+X-Mem pinned to cpu 17
+X-Mem pinned to cpu 18
+X-Mem pinned to cpu 26
+X-Mem pinned to cpu 24
+X-Mem pinned to cpu 16
+X-Mem pinned to cpu 15
+X-Mem pinned to cpu 25
+X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu 22
+X-Mem pinned to cpu 23X-Mem pinned to cpu X-Mem pinned to cpu 
+X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu X-Mem pinned to cpu 1925
+
+1721
+X-Mem pinned to cpu 15
+16
+24
+26
+X-Mem prime meme warmup begin
+22X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+20X-Mem prime meme warmup begin
+
+
+X-Mem prime meme warmup begin
+X-Mem prime meme warmup begin
+18X-Mem prime meme warmup begin
+
+
+X-Mem prime meme warmup begin
+zsim p3: xchg rbx rbx caught!
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+[S 3] MM init done
+zsim p2: xchg rbx rbx caught!
+zsim p2: xchg rbx rbx caught!
+[S 2] core 5 registered LBUF at addrs 799999405376
+[S 2] core 9 registered LBUF at addrs 799905808448
+[S 2] core 4 registered LBUF at addrs 799999733248
+[S 2] core 10 registered LBUF at addrs 799999864576
+[S 2] core 6 registered LBUF at addrs 799999798848
+[S 2] core 7 registered LBUF at addrs 800001896896
+[S 2] core 8 registered LBUF at addrs 800001962496
+[S 2] core 11 registered LBUF at addrs 800002028160
+[S 2] core 8 registered WQ at addrs 799010331520
+[S 2] core 4 registered WQ at addrs 799010183168
+[S 2] core 8 registered CQ at addrs 799010319168
+[S 2] core 4 registered CQ at addrs 799010170816
+[S 2] core 6 registered WQ at addrs 799010257344
+[S 2] core 6 registered CQ at addrs 799010244992
+[S 2] core 7 registered WQ at addrs 799010294464
+[S 2] core 7 registered CQ at addrs 799010282112
+[S 2] core 10 registered WQ at addrs 799010405696
+[S 2] core 10 registered CQ at addrs 799010393344
+[S 2] core 5 registered WQ at addrs 799010220288
+[S 2] core 5 registered CQ at addrs 799010207936
+[S 0] Detected possible stall due to fake leaves (2 current)
+[S 0]  [2/6] accept (202) @ 0x7fffe30bf152
+[S 0]  [2/3] accept (202) @ 0x7fffe30bf152
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [2/3] accept (202) @ 0x7fffe30bf152
+[S 0] Blacklisting from future fake leaves: [2] accept @ 0x7fffe30bf152 | arg0 0x717e74 arg1 0x80
+[S 2] core 11 registered WQ at addrs 799010442816
+[S 2] core 11 registered CQ at addrs 799010430464
+[S 2] core 9 registered WQ at addrs 799010368640
+[S 2] core 9 registered CQ at addrs 799010356288
+[S 2] core 12 registered LBUF at addrs 800008780480
+[S 2] core 12 registered WQ at addrs 799010479872
+[S 2] core 12 registered CQ at addrs 799010467520
+[S 2] core 13 registered LBUF at addrs 800008846080
+[S 2] core 13 registered WQ at addrs 799010516992
+[S 2] core 13 registered CQ at addrs 799010504640
+[S 2] core 3 registered LBUF at addrs 800008911808
+[S 2] core 3 registered WQ at addrs 799010146112
+[S 2] core 3 registered CQ at addrs 799010133760
+[S 2] core 14 registered LBUF at addrs 800008977408
+[S 2] core 14 registered WQ at addrs 799010554048
+[S 2] nic init completed
+[S 2] core 14 registered CQ at addrs 799010541696
+[S 0] starting sim time count
+[S 0] first sampling cycle: 22126004
+[S 0] done with closed loop warmup!, sampling phase: 2376
+[S 0] Spillover count during warmup: 0
+[S 2] Heartbeat target 12 reached, marking stats dump
+[S 2] Resetting heartbeat count (for periodic dumps)
+[S 2] Dumping eventual stats for process GROUP 2 (heartbeats)
+[S 0] RB space iterated 1-th time: sampling phase 4162
+[S 0] RB space iterated 2-th time: sampling phase 7652
+[S 0] RB space iterated 3-th time: sampling phase 11142
+[S 0] RB space iterated 4-th time: sampling phase 14632
+[S 0] RB space iterated 5-th time: sampling phase 18121
+[S 0] RB space iterated 6-th time: sampling phase 21611
+[S 0] RB space iterated 7-th time: sampling phase 25101
+[S 0] RB space iterated 8-th time: sampling phase 28591
+[S 0] RB space iterated 9-th time: sampling phase 32080
+[S 0] RB space iterated 10-th time: sampling phase 35570
+[S 0] RB space iterated 11-th time: sampling phase 39060
+[S 0] RB space iterated 12-th time: sampling phase 42550
+[S 0] RB space iterated 13-th time: sampling phase 46040
+[S 0] RB space iterated 14-th time: sampling phase 49529
+C: Tool (or Pin) caused signal 11 at PC 0x7ffff61e6886
+[H] Child 330936 done
+[H] Received interrupt
+[H] Attempting graceful termination
+[H] Killing process 330937
+[H] Killing process 330938
+[H] Child 330937 done
+[H] Killing process 330939
+[H] Child 330938 done
+[H] Done sending kill signals

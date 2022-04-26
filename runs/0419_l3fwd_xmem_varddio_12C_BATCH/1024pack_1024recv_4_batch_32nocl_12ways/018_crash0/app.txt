@@ -1,0 +1,42 @@
+[S 3] WARN: Sched: untested code path, check with Daniel if you see this
+[S 3] WARN: Sched: untested code path, check with Daniel if you see this
+[S 3] Failed assertion on build/opt/process_stats.cpp:77 'cCycles >= lastCoreCycles[cid] && cInstrs >= lastCoreInstrs[cid]' (with '2637975 >= 2638343 && 1')
+[S 3] [10] Internal exception detected:
+[S 3] [10]  Code: 1
+[S 3] [10]  Address: 0x7ffff6312224
+[S 3] [10]  Description: Exception Code: ACCESS_INVALID_ADDRESS. Exception Address = 0x7ffff6312224. Access Type: UNKNOWN. Access Address = 0x000000000
+[S 3] [10] Backtrace (19/40 max frames)
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/zsim.cpp:1423 / InternalExceptionHandler(unsigned int, LEVEL_BASE::EXCEPTION_INFO*, LEVEL_VM::PHYSICAL_CONTEXT*, void*)
+[S 3] [10]  :? / LEVEL_PINCLIENT::IEH_CALLBACKS::NotifyInternalException(unsigned int, LEVEL_BASE::EXCEPTION_INFO*, LEVEL_VM::CONTEXT*)
+[S 3] [10]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(_ZN8LEVEL_VM12SIGNALS_IMPL19InternalHandlerSyncEiPN7BARECRT8SIGXINFOEPN5PINVM11ISIGCONTEXTEPPKNS_14SCT_ATTRIBUTESEPNS_5PCTXTEPj+0x444) [0x3043a9454]
+[S 3] [10]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(_ZN8LEVEL_VM12SIGNALS_IMPL20HandlePhysicalSignalEPN7BARECRT8SIGXINFOEPN5PINVM11ISIGCONTEXTE+0x124) [0x3043aa1f4]
+[S 3] [10]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(_ZN5PINVM28SIGNAL_DETAILS_LINUX_INTEL6415InternalHandlerEiPN7BARECRT8SIGXINFOEPv+0xe8) [0x304438c88]
+[S 3] [10]  /nethome/acho44/zsim/pin-2.14/intel64/bin/pinbin(BARECRT_SigReturnRt+0) [0x30446603c]
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/process_stats.cpp:77 (discriminator 20) / ProcessStats::updateCore(unsigned int, unsigned int)
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/process_stats.cpp:91 / ProcessStats::update()
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/process_stats.cpp:52 (discriminator 1) / ProcessStats::getProcessCycles(unsigned int)
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/stats.h:386 / LambdaVectorStat<ProcessStats::ProcessStats(AggregateStat*)::{lambda(unsigned int)#1}>::count(unsigned int) const
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/hdf5_stats.cpp:91 (discriminator 2) / HDF5BackendImpl::dumpWalk(Stat*)
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/stats.h:159 / AggregateStat::size() const
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/hdf5_stats.cpp:234 / HDF5BackendImpl::dump(bool)
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/event_queue.h:101 / EventQueue::tick()
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/scheduler.h:447 / Scheduler::callback()
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/barrier.h:212 / Barrier::checkEndPhase(unsigned int)
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/zsim.cpp:515 / TakeBarrier(unsigned int, unsigned int)
+[S 3] [10]  /nethome/acho44/zsim/zSim/build/opt/ooo_core.cpp:753 / OOOCore::BblFunc(unsigned int, unsigned long, BblInfo*)
+[S 3] [10]  [0x7fffe37f1800]
+Pin app terminated abnormally due to signal 11.
+[H] WARN: Stalled for 20 secs so far
+[H] WARN: Stalled for 30 secs so far
+[H] WARN: Stalled for 40 secs so far
+[H] WARN: Stalled for 50 secs so far
+[H] WARN: Stalled for 60 secs so far
+[H] WARN: Stalled for 70 secs so far
+[H] WARN: Stalled for 80 secs so far
+[H] WARN: Stalled for 90 secs so far
+[H] WARN: Stalled for 100 secs so far
+[H] WARN: Stalled for 110 secs so far
+[H] WARN: Stalled for 120 secs so far
+[H] WARN: Stalled for 130 secs so far
+[H] WARN: Deadlock detected, killing children
+[H] WARN: Hard death at exit (1 children running), killing the whole process tree

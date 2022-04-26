@@ -1,0 +1,2 @@
+average interval: 62
+NF0_average interval: 62
