@@ -1,0 +1,111 @@
+#!/usr/bin/env python3
+
+import os
+import sys 
+import csv 
+import math
+import statistics
+import numpy as np
+from os.path import exists
+
+
+script_dir = '/shared/acho44/'
+regress_pre = '/shared/acho44/0328_l3fwd_colloc_VAR_POLICIES/'
+psizes = {'512', '1024'}
+rbcounts = {'512','1024','2048'}
+#rbcounts = {'256','512','1024'}
+#memconts = {'6mc','3mc','2mc','simplemem','ideal'}
+memconts = {'6','3','2','simplemem','ideal'}
+dates = {'0327'}
+
+ddio_setups=['2','4','11','clean']
+
+for ps in psizes:
+    for ds in ddio_setups:
+        for rbc in rbcounts:
+            for mc in memconts:
+                for day in dates:
+                    #target_path = regress_pre + ps+'pack_'+rbc+'recv/ddio_var_mem_ctrl/'+mc+'/'+day
+                    #target_path = regress_pre + str(ps)+'pack_'+str(rbc)+'recv_'+mc+'_'+day+'_batch_32'
+                    target_path = regress_pre + str(ps)+'pack_'+str(rbc)+'recv_'+mc+'_'+day+'_batch_32'+ds+'ways'
+                    print (target_path)
+                    if os.path.isdir(target_path):
+                        os.chdir(target_path)
+                        
+                        #for dd in os.listdir('.'):
+                        for bb in range(1,100,1):
+                            dd= '0'+str(bb)
+                            
+                            if os.path.isdir(target_path+'/'+dd):
+                                print(dd)
+                                os.chdir(target_path+'/'+dd)
+
+                                print('find memhog perf')
+                                cycles = 0
+                                cCycles = 0
+                                instrs= 0
+                                iter_count=0
+                                cCycle_ratio=0
+                                ipcs=0
+                                if exists('zsim_final.out'):
+                                    zsimout = open('zsim_final.out','r')
+                                    line = zsimout.readline()
+                                    while line:
+                                        if 'OCore1-22' in line: ##arbitrarily picked one of the memhog cores
+                                            line=zsimout.readline()
+                                            ###parse out cycles
+                                            tmp1=line.split('cycles: ')[1]
+                                            tmp2=int(tmp1.split(' #')[0])
+                                            cycles = tmp2
+                                            
+                                            line=zsimout.readline()
+                                            ##parse out cCycles
+                                            tmp1=line.split('cCycles: ')[1]
+                                            tmp2=int(tmp1.split(' #')[0])
+                                            cCycles = tmp2
+
+                                            line=zsimout.readline()
+                                            ##parse out instrs
+                                            tmp1=line.split('instrs: ')[1]
+                                            tmp2=int(tmp1.split(' #')[0])
+                                            instrs=tmp2
+                                            break
+                                        line=zsimout.readline()
+
+
+                                    zsimout.close()
+                                
+                                mh_iter_count = 0
+                                loop_count_pc = 0 ##loop count per cycle
+                                iter_count_name = 'memhog_25_iter_count.txt'
+                                if exists(iter_count_name):
+                                    f_mh_iter_count = open(iter_count_name, 'r')
+                                    line = f_mh_iter_count.readline()
+                                    mh_iter_count = int(line)
+                                    f_mh_iter_count.close()
+
+
+                                if (cycles!=0):
+                                    cCycle_ratio = cCycles/cycles
+                                    ipcs = instrs / cycles
+                                    loop_count_pc = mh_iter_count / cycles
+
+
+                                f_mh_stats = open('memhog_stats.txt','w')
+                                f_mh_stats.write('memhog_stats,\n')
+                                f_mh_stats.write('cycles, '+str(cycles)+'\n')
+                                f_mh_stats.write('ipcs, '+str(ipcs)+'\n')
+                                f_mh_stats.write('cCycle_ratio, '+str(cCycle_ratio)+'\n')
+                                f_mh_stats.write('loop_count_per_cycle, '+str(loop_count_pc)+'\n')
+                                f_mh_stats.close()
+
+                                os.system('cat memhog_stats.txt >> stat_summary.txt')
+                      
+                                print('mh_stats written')
+                                #os.system('cd ..')
+                        #os.system('/shared/acho44/get_tail_latencies_from_batch.py')
+                        #os.system('ls')
+                    else:
+                        print('target path does not exits\n')
+
+
